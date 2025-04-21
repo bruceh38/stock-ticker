@@ -1,11 +1,11 @@
-app.use(express.static('public'));
+
 require('dotenv').config();
 const express = require('express');
 const { MongoClient } = require('mongodb');
 const path = require('path');
 
 const app = express();
-
+app.use(express.static('public'));
 //Use environment variable for MongoDB URI
 const uri = process.env.MONGODB_URI;
 const client = new MongoClient(uri);
