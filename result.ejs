@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Results</title>
+</head>
+<body>
+  <h1>Search Results</h1>
+  <% if (companies.length === 0) { %>
+    <p>No matching companies found.</p>
+  <% } else { %>
+    <ul>
+    <% companies.forEach(function(company) { %>
+    <li>
+        <strong>Name:</strong> <%= company.name %><br>
+        <strong>Ticker:</strong> <%= company.ticker %><br>
+        <strong>Price:</strong> $<%= company.latest_price %>
+    </li>
+    <% }); %>
+    </ul>
+<% } %>
+</body>
+</html>
