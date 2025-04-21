@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8" />
+        <title>Stock Lookup</title>
+    
+    </head>
+    <body>
+        <h1>Stock Lookup</h1>
+        <form action = "/process" method = "GET">
+        <input type = "text" name = "query" placeholder = "Enter ticker or company name" required>
+        <br><br>
+        <input type = "radio" id = "ticker" name = "searchType" value = "ticker" checked>
+            <label for = "ticker">Ticker Symbol</label>
+            <input type = "radio" id = "company" name = "searchType" value = "company">
+            <label for = "company" >Company Name</label>
+
+            <br><br>
+            <button type = "submit">Search</button>
+        </form>
+    </body>
+</html>
