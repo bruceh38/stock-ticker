@@ -1,77 +1,102 @@
-/* styles.css */
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f5f7fa;
-    margin: 0;
-    padding: 0;
-    color: #333;
-  }
-  
-  header {
-    background-color: #0077cc;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  main {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  input[type="text"] {
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-  }
-  
-  .radio-group {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-  }
-  
-  button {
-    padding: 10px;
-    background-color: #0077cc;
-    color: white;
-    border: none;
-    font-size: 16px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #005fa3;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  li {
-    padding: 10px;
-    border-bottom: 1px solid #eee;
-  }
-  
-  li:last-child {
-    border-bottom: none;
-  }
-  
-  h1 {
-    color: #0077cc;
-    margin-bottom: 20px;
-  }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #0066aa;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  color: #0066aa;
+  margin-bottom: 25px;
+  font-size: 28px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input[type="text"] {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 16px;
+}
+
+label {
+  cursor: pointer;
+}
+
+button {
+  padding: 12px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  line-height: 1.6;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f0f0f0;
+  color: #777;
+  font-size: 14px;
+  margin-top: 60px;
+}
