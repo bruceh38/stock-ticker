@@ -2,11 +2,15 @@
 <html>
 <head>
   <title>Search Results</title>
+  <link rel = "stylesheet" href="/styles.css">
 </head>
 <body>
+  <!-- page heading -->
   <h1>Search Results</h1>
+  <!-- prompt the user when no companies match the query -->
   <% if (companies.length === 0) { %>
     <p>No matching companies found.</p>
+    <!-- otherwise loop through the array of companies and display them -->
   <% } else { %>
     <ul>
     <% companies.forEach(function(company) { %>

@@ -3,19 +3,25 @@
     <head>
         <meta charset = "UTF-8" />
         <title>Stock Lookup</title>
-    
+        <link rel = "stylesheet" href="/styles.css">
     </head>
     <body>
+        <!-- main heading -->
         <h1>Stock Lookup</h1>
+        <!-- send a GET request to process when submitted -->
         <form action = "/process" method = "GET">
-        <input type = "text" name = "query" placeholder = "Enter ticker or company name" required>
-        <br><br>
-        <input type = "radio" id = "ticker" name = "searchType" value = "ticker" checked>
+            <!-- text input -->
+            <input type = "text" name = "query" placeholder = "Enter ticker or company name" required>
+            <br><br>
+            <!-- radio button to select search by ticker -->
+            <input type = "radio" id = "ticker" name = "searchType" value = "ticker" checked>
             <label for = "ticker">Ticker Symbol</label>
+            <!-- button for searching by name -->
             <input type = "radio" id = "company" name = "searchType" value = "company">
             <label for = "company" >Company Name</label>
 
             <br><br>
+            <!-- submit button -->
             <button type = "submit">Search</button>
         </form>
     </body>
