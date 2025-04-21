@@ -4,7 +4,7 @@ const express = require('express');
 const { MongoClient } = require('mongodb');
 const path = require('path');
 const app = express();
-
+const uri = process.env.MONGODB_URI;
 const mongoUri='mongodb://yanxiaohuang:3282306647Qwer@ac-bbl7oyz-shard-00-00.huyownj.mongodb.net:27017,ac-bbl7oyz-shard-00-01.huyownj.mongodb.net:27017,ac-bbl7oyz-shard-00-02.huyownj.mongodb.net:27017/?replicaSet=atlas-jqg13k-shard-0&ssl=true&authSource=admin&retryWrites=true&w=majority&appName=ClusterBruce';
 const client = new MongoClient(uri);
 const dbName = 'Stock';
